@@ -1,0 +1,57 @@
+package com.example.newagriapp;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+import java.util.ArrayList;
+import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
+
+public class lists extends AppCompatActivity {
+    ListView listView;
+    ArrayList<String> array;
+    ArrayAdapter<String> adapter;
+    Button mybutton;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lists);
+        mybutton=findViewById(R.id.button6);
+        mybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent =new Intent( lists .this,explore.class);
+                startActivity(myintent);
+            }
+        });
+        listView = (ListView) findViewById(R.id.list1);
+        array = new ArrayList<>();
+        array.add("Tomatoes");
+        array.add("Green paper");
+        array.add("Cabbages");
+        array.add("Cucamber");
+        array.add("Bananas");
+        array.add("carrots");
+        array.add("Beet roots");
+        array.add("Corn flower");
+        array.add("Egg plants");
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,array);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                Toast.makeText(getApplicationContext()," "+array.get(position),Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+    }
+}

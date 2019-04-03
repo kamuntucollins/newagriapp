@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Home"
+        android:title="home"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Chemicals"
+        android:title="chemicals"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Plants"
+        android:title="Plants"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Service"
+        android:title="service"
+        app:showAsAction="never"/>
+
+</menu>
