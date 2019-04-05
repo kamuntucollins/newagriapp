@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">newagriapp</string>
+    <string name="title_activity_bottom_navigation">Bottom_navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="kamuntu_collins_gmail_com_0758042721">kamuntu.collins@gmail.com|0758042721.</string>
+    <string name="copyright_2019_version_1_0_agridom_com">Copyright 2019 version 1.0 AgriDom.com</string>
+    <string name="store">Store</string>
+    <string name="explore">Explore</string>
+    <string name="welcome_to_agridom_world">Welcome to AgriDom World</string>
 </resources>

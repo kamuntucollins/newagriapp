@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
     // from mbarara district
     //hobby:software development
     Button mybutton;
-
+    TextView mytext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mybutton=findViewById(R.id.button2);
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,5 +32,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myintent);
             }
         });
+
+
+
+        mybutton=findViewById(R.id.button3);
+        mybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent =new Intent( MainActivity .this,Main2Activity.class);
+                startActivity(myintent);
+            }
+        });
+
+        mytext=(TextView)findViewById(R.id.textView);
+      mytext.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+Intent myintent=new Intent(MainActivity.this,Agridom.class);
+startActivity(myintent);
+              Toast.makeText(MainActivity.this, "you attempt to open AgriDom", Toast.LENGTH_SHORT).show();
+          }
+      });
+
+
+
     }
 }

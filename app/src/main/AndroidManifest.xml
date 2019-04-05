@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".Agridom"></activity>
+        <activity android:name=".Main2Activity" />
         <activity android:name=".lists" />
         <activity android:name=".plants" />
         <activity android:name=".chemicals" />
         <activity android:name=".explore" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
