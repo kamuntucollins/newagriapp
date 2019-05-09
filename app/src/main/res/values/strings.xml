@@ -9,4 +9,40 @@
     <string name="store">Store</string>
     <string name="explore">Explore</string>
     <string name="welcome_to_agridom_world">Welcome to AgriDom World</string>
+    <string name="more">MORE</string>
+    <string name="back">BACK</string>
+    <string name="smart_farming_world">smart farming world!</string>
+    <string name="thank_you_for_choosing">Thank you for choosing</string>
+    <string name="give_us_feedbak_please">Give us feedbak please!</string>
+    <string name="send">send</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="message">message</string>
+    <string name="please_send_us_feedback_by_email_below">please send us feedback by email below!</string>
+    <string name="email">email</string>
+    <string name="subject">subject</string>
+    <string name="header">WELCOME TO CROP STORE</string>
+    <string name="welcome_to_store">WELCOME TO STORE</string>
+    <string name="disc">
+        here in store well shall be able to find various crop types and there
+descriptions,but we are sorry for the inconveniences, we are unable to find
+the details on each crop types
+but still we can find a way to copy up with the few available species and animals.
+vegetables are short times,they take few months to grow and generate money.
+    </string>
+    <string name="disc2">a tomato plant  here looks to be at one month
+tomatoes may take 3-4month in the field and this makes them
+short timers in the process,the produce 30-70 fruits on each entire tree if well
+looked after,constant spraying is essential in the growth
+of these tomatoes,they exist in different types hence making them more
+wide range of crops to work with</string>
+    <string name="disc3">farm animals are also part of the agricultural process
+they inclue poutry,pigs,cows,goats and sheep though not
+limited to the following,they need esential care
+to increase they produce.that is poor
+feeding f farm animals may result into undesired results
+at the end of the production process.keep farm animal structures
+clean and do regulary check ups and isolate sick animals</string>
+    <string name="headers">Register With Us To Have The Best Experience</string>
+    <string name="register">REGISTER</string>
 </resources>

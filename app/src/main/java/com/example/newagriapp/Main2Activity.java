@@ -12,12 +12,15 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_local_florist_black_24dp);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_main2);
 
         BottomNavigationView Bottom_nav=findViewById(R.id.bottom_navigation);
         Bottom_nav.setOnNavigationItemSelectedListener(navlistner );
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new homefragment()).commit();
+                new Homefragment()).commit();
 
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navlistner=
@@ -27,7 +30,7 @@ public class Main2Activity extends AppCompatActivity {
                     Fragment selectedFragment=null;
                     switch(menuItem.getItemId()){
                         case R.id.nav_home:
-                            selectedFragment=new homefragment();
+                            selectedFragment=new Homefragment();
                             break;
                         case R.id.nav_favorites:
                             selectedFragment=new favoritesfragment();

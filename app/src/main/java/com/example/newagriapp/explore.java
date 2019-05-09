@@ -14,12 +14,16 @@ Button mybutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_local_florist_black_24dp);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_explore);
-        mybutton=findViewById(R.id.button);
+
+        mybutton=findViewById(R.id.more);
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent =new Intent( explore .this,MainActivity.class);
+                Intent myintent= new Intent(explore.this,Email.class);
                 startActivity(myintent);
             }
         });
@@ -47,6 +51,10 @@ Button mybutton;
             case R.id.Service:
                 Intent myintent4 =new Intent(explore.this,lists.class);
                 startActivity(myintent4);
+                break;
+            case R.id.More:
+                Intent myintent5 =new Intent(explore.this,Draweroptions.class);
+                startActivity(myintent5);
                 break;
 
 

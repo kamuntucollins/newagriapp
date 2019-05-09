@@ -16,19 +16,14 @@ public class lists extends AppCompatActivity {
     ListView listView;
     ArrayList<String> array;
     ArrayAdapter<String> adapter;
-    Button mybutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_local_florist_black_24dp);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_lists);
-        mybutton=findViewById(R.id.button6);
-        mybutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent =new Intent( lists .this,explore.class);
-                startActivity(myintent);
-            }
-        });
+
         listView = (ListView) findViewById(R.id.list1);
         array = new ArrayList<>();
         array.add("Tomatoes");
@@ -39,7 +34,12 @@ public class lists extends AppCompatActivity {
         array.add("carrots");
         array.add("Beet roots");
         array.add("Corn flower");
-        array.add("Egg plants");
+        array.add("lettuce");
+        array.add("zuccine");
+        array.add("onions");
+        array.add("cattle");
+        array.add("goats");
+        array.add("poutrly");
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,array);
         listView.setAdapter(adapter);

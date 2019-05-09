@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bd"
+        android:title="people"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"
+        />
+
+    <item
+        android:id="@+id/farms"
+        android:title="Farms"
+        android:icon="@drawable/ic_local_florist_black_24dp"
+        />
+
+    <item
+        android:id="@+id/climate"
+        android:title="Climate"
+        android:icon="@drawable/ic_wb_cloudy_black_24dp"
+        />
+    <item
+        android:id="@+id/trends"
+        android:title="Trends"
+        android:icon="@drawable/ic_trending_up_black_24dp"
+        />
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Exit"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        />
+
+</menu>

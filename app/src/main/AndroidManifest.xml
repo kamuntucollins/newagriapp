@@ -2,20 +2,49 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.newagriapp">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@mipmap/agri1"
         android:label="AgriApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".Agridom"></activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".lists" />
-        <activity android:name=".plants" />
-        <activity android:name=".chemicals" />
-        <activity android:name=".explore" />
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".Mydb"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Content_for_db"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Store"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Email"
+            android:parentActivityName=".explore" />
+        <activity
+            android:name=".Draweroptions"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Agridom"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".lists"
+            android:parentActivityName=".explore" />
+        <activity
+            android:name=".plants"
+            android:parentActivityName=".explore" />
+        <activity
+            android:name=".chemicals"
+            android:parentActivityName=".explore" />
+        <activity
+            android:name=".explore"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

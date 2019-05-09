@@ -19,5 +19,9 @@
         android:id="@+id/Service"
         android:title="service"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/More"
+        android:title="More"
+        app:showAsAction="never"/>
 
 </menu>
